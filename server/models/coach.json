@@ -1,0 +1,14 @@
+{
+  "name": "Coach",
+  "base": "PersistedModel",
+  "plural": "Coach",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

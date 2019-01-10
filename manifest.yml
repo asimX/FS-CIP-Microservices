@@ -1,0 +1,30 @@
+applications:
+- path: .
+  name: AcmeMartUtilityAPI
+  routes:
+  - route: am-utilityapi.eu-gb.mybluemix.net
+  disk_quota: 1024M
+  memory: 512M
+  instances: 1
+  services:
+  - "Event Streams-AcmeMartUD"
+  env:
+    LD_LIBRARY_PATH: /home/vcap/app/node_modules/node-rdkafka/build/deps/
+    NODE_ENV: development
+    GW_SECRET_HEADER: x-app-sharedsecret
+    GW_SECRET: 000000
+    BASIC_AUTH_USER: NotUsed
+    BASIC_AUTH_PASS: NotUsed
+    COS_ENDPOINT: https://s3.us-east.objectstorage.softlayer.net
+    COS_API_KEY: DuNGVFOk8S9uTLBRHriXNomf0b-JcUxLZI9ADGXlUpVH
+    COS_IBM_AUTH_ENDPOINT: https://iam.ng.bluemix.net/oidc/token
+    COS_SERVICE_INSTANCE_ID: crn:v1:bluemix:public:cloud-object-storage:global:a/170d3f7e5a856289f8562a444df4c067:fda060df-5a2d-4aa8-824a-ce23d8b821a1:bucket:acmemartupload
+    COS_ACME_MART_BUCKET_NAME: acmemartupload
+    CLOUDANT_DB_URL: https://89cb3cf8-3124-42b7-99ef-55725be14027-bluemix:746bc2b56d55ef88d281ade82f89c366e67cd29fc0ecfecfca3c25bc5f9b9867@89cb3cf8-3124-42b7-99ef-55725be14027-bluemix.cloudant.com
+    EVENT_STREAMS_NEW_ORDER_TOPIC_NAME: acmemart_new_order
+    EVENT_STREAMS_UPDATE_ORDER_TOPIC_NAME: acmemart_update_order
+    EVENT_STREAMS_ON_CLOUD: true
+    WVR_API_KEY: UxUJveg5rrqLNdzx5IO5TPUZkyQ8gWjcGsEnnWqA9L4b
+    WVR_URL: https://gateway.watsonplatform.net/visual-recognition/api
+    WVR_VERSION_DATE: 2018-03-19
+    WVR_CLASSIFIER_ID: AirJordans_1065097843

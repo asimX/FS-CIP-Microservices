@@ -1,0 +1,703 @@
+{
+  "name": "Acme Mart Customer Care Skill",
+  "intents": [
+    {
+      "intent": "Thanks",
+      "examples": [
+        {
+          "text": "i appreciate it"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "thank you very much"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "much appreciated"
+        },
+        {
+          "text": "many thanks"
+        },
+        {
+          "text": "that's nice of you"
+        }
+      ],
+      "description": "Thanks"
+    },
+    {
+      "intent": "Help",
+      "examples": [
+        {
+          "text": "help"
+        },
+        {
+          "text": "help me decide"
+        },
+        {
+          "text": "help me"
+        },
+        {
+          "text": "i need assistance"
+        },
+        {
+          "text": "can you help"
+        },
+        {
+          "text": "can you assist me"
+        }
+      ],
+      "description": "Ask for help"
+    },
+    {
+      "intent": "eCommerce_Product_Order_Status",
+      "examples": [
+        {
+          "text": "Where is my order?"
+        },
+        {
+          "text": "Please, can you tell me about the status of an orden I made?"
+        },
+        {
+          "text": "Order progress"
+        },
+        {
+          "text": "I would like to check the status of an order I placed recently."
+        },
+        {
+          "text": "I was just wondering if I could check the status of an order I made."
+        },
+        {
+          "text": "I want a status report on an order I made last week."
+        },
+        {
+          "text": "Can I check on my order?"
+        }
+      ],
+      "description": "Request status of an order that has been placed."
+    },
+    {
+      "intent": "General_Greetings",
+      "examples": [
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Hi there"
+        },
+        {
+          "text": "How are things going?"
+        },
+        {
+          "text": "How are you today?"
+        },
+        {
+          "text": "How have you been?"
+        },
+        {
+          "text": "How is it going?"
+        },
+        {
+          "text": "How r u?"
+        },
+        {
+          "text": "Looking good eve"
+        },
+        {
+          "text": "Ok take me back"
+        },
+        {
+          "text": "What's new?"
+        },
+        {
+          "text": "What's up?"
+        },
+        {
+          "text": "Who is this?"
+        },
+        {
+          "text": "You there"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "yo"
+        },
+        {
+          "text": "hiya"
+        },
+        {
+          "text": "Good day"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good to see you"
+        },
+        {
+          "text": "Greetings"
+        },
+        {
+          "text": "Have you been well?"
+        },
+        {
+          "text": "Hello Agent"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hello I am looking for some help here"
+        },
+        {
+          "text": "Hey how are you doing"
+        },
+        {
+          "text": "Hey there all"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hey twin"
+        },
+        {
+          "text": "Hey you"
+        },
+        {
+          "text": "Hi advisor"
+        }
+      ],
+      "description": "Greetings"
+    },
+    {
+      "intent": "Cancel",
+      "examples": [
+        {
+          "text": "forget it"
+        },
+        {
+          "text": "never mind"
+        },
+        {
+          "text": "nevermind"
+        },
+        {
+          "text": "cancel that"
+        },
+        {
+          "text": "cancel the request"
+        },
+        {
+          "text": "i changed my mind"
+        }
+      ],
+      "description": "Cancel the current request"
+    },
+    {
+      "intent": "Goodbye",
+      "examples": [
+        {
+          "text": "arrivederci"
+        },
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "so long"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "ciao"
+        }
+      ],
+      "description": "Good byes"
+    },
+    {
+      "intent": "Order_Event_Details",
+      "examples": [
+        {
+          "text": "Tell me about the history of my order."
+        },
+        {
+          "text": "What events have taken place against my order?"
+        },
+        {
+          "text": "Tell me about the events against my order."
+        },
+        {
+          "text": "Give me more detail about my order."
+        },
+        {
+          "text": "What is the history of my order?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-location",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-person",
+      "values": []
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "Virtual assistant demo skill",
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. How are you?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1502484041694",
+      "metadata": {},
+      "dialog_node": "node_5_1545110862316",
+      "previous_sibling": "node_4_1545110841940"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. Good evening."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1502484041694",
+      "metadata": {},
+      "conditions": "$timeOfDay == \"Evening\"",
+      "dialog_node": "node_4_1545110841940",
+      "previous_sibling": "node_3_1545110817031"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. Good afternoon."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1502484041694",
+      "metadata": {},
+      "conditions": "$timeOfDay == \"Afternoon\"",
+      "dialog_node": "node_3_1545110817031",
+      "previous_sibling": "node_2_1545110725404"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. Good morning."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1502484041694",
+      "metadata": {},
+      "conditions": "$timeOfDay == \"Morning\"",
+      "dialog_node": "node_2_1545110725404"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "So long",
+            "See ya",
+            "Good bye"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1516824993307",
+      "metadata": {},
+      "conditions": "#Goodbye",
+      "dialog_node": "node_12_1468329566917",
+      "previous_sibling": "node_13_1502484041694"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "You're welcome. Just let me know if you need anything else",
+            "No problem. Just let me know if you need anything else",
+            "My pleasure. Just let me know if you need anything else"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1516824993307",
+      "metadata": {},
+      "conditions": "#Thanks",
+      "dialog_node": "node_2_1468243505617",
+      "previous_sibling": "node_12_1468329566917"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_1_1516824993307",
+      "metadata": {},
+      "conditions": "#General_Greetings",
+      "dialog_node": "node_13_1502484041694"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "What is your Order number?"
+      },
+      "parent": "slot_3_1545196537439",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_5_1545196537439",
+      "previous_sibling": "handler_4_1545196537439"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_3_1545196537439",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_4_1545196537439"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1545194787266",
+      "variable": "$number",
+      "dialog_node": "slot_3_1545196537439",
+      "previous_sibling": "handler_2_1545196537432"
+    },
+    {
+      "type": "standard",
+      "title": "Handling Error",
+      "output": {
+        "text": {
+          "values": [
+            "There was an error in CloudFunctions call: <? $my_result.cloud_functions_call_error ?>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1545194787266",
+      "metadata": {},
+      "conditions": "$my_result.cloud_functions_call_error",
+      "dialog_node": "node_4_1545239146200",
+      "previous_sibling": "node_3_1545239144456"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your Order number?",
+            "Can you provide me an Order number?",
+            "Sure. What's the Order number?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1545194787266",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_2_1545196537432",
+      "previous_sibling": "node_4_1545239146200"
+    },
+    {
+      "type": "standard",
+      "title": "Response",
+      "output": {
+        "text": {
+          "values": [
+            "$my_result.greeting"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1545194787266",
+      "metadata": {},
+      "conditions": "$my_result.cloud_functions_call_error == null",
+      "dialog_node": "node_3_1545239144456"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Great. I will check on order $number."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1544477873535",
+      "disabled": true,
+      "metadata": {},
+      "dialog_node": "node_5_1544992508742",
+      "previous_sibling": "node_7_1545117613809"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your Order number?",
+            "Can you provide me an Order number?",
+            "Sure. What's the Order number?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1544477873535",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_1_1544991339792",
+      "previous_sibling": "node_5_1544992508742"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1544477873535",
+      "variable": "$number",
+      "dialog_node": "slot_2_1544991339803",
+      "previous_sibling": "handler_1_1544991339792"
+    },
+    {
+      "type": "standard",
+      "title": "Handling Error",
+      "output": {
+        "text": {
+          "values": [
+            "There was an error in CloudFunctions call: <? $my_result.cloud_functions_call_error ?>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1544477873535",
+      "metadata": {},
+      "conditions": "$my_result.cloud_functions_call_error",
+      "dialog_node": "node_7_1545117613809",
+      "previous_sibling": "node_6_1545117546924"
+    },
+    {
+      "type": "standard",
+      "title": "Response",
+      "output": {
+        "text": {
+          "values": [
+            "$my_result.greeting"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1544477873535",
+      "metadata": {},
+      "conditions": "$my_result.cloud_functions_call_error == null",
+      "dialog_node": "node_6_1545117546924"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "What is your Order number?"
+      },
+      "parent": "slot_2_1544991339803",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_4_1544991339803",
+      "previous_sibling": "handler_3_1544991339803"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_2_1544991339803",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1544991339803"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "I didn't understand can you try again",
+            "Hmmm... give me that one more time. "
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "digress_in": "returns",
+      "dialog_node": "node_2_1467831978407",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1516824993307"
+    },
+    {
+      "type": "frame",
+      "title": "Order Inquiry",
+      "output": {
+        "text": {
+          "values": [
+            "Thank you. Give me a moment to look up the latest Events on Order # $number",
+            "Hold on a moment while I look up the latest Events on Order # $number",
+            "Thanks. Hang tight for a moment while I find the latest Events on Order # $number"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "actions": [
+        {
+          "name": "/dennis.ashby_demo/AcmeMartUD/dtest2",
+          "type": "server",
+          "parameters": {
+            "message": "$number"
+          },
+          "credentials": "$private.my_credentials",
+          "result_variable": "$my_result"
+        }
+      ],
+      "context": {
+        "private": {
+          "my_credentials": {
+            "api_key": "2d93d1d3-3a10-4932-96ad-a459c18d9303:psFBPaUFCg8ZN5JzY08Goe0Q9a1tvTiHT5DprNF0g1Y6NaXH3RQOWf4I12bFv1y7"
+          }
+        }
+      },
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1545117546924"
+      },
+      "conditions": "#eCommerce_Product_Order_Status",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1544477873535",
+      "digress_out": "allow_all",
+      "previous_sibling": "Opening",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "folder",
+      "title": "Small Talk",
+      "metadata": {},
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1516824993307",
+      "previous_sibling": "node_1_1545194787266"
+    },
+    {
+      "type": "frame",
+      "title": "Order Events",
+      "output": {
+        "text": {
+          "values": [
+            "Thank you. Give me a moment to look up the latest Events on Order # $number",
+            "Hold on a moment while I look up the latest Events on Order # $number",
+            "Thanks. Hang tight for a moment while I find the latest Events on Order # $number"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "actions": [
+        {
+          "name": "/dennis.ashby_demo/AcmeMartUD/dtest3",
+          "type": "server",
+          "parameters": {
+            "message": "$number"
+          },
+          "credentials": "$private.my_credentials",
+          "result_variable": "$my_result"
+        }
+      ],
+      "context": {
+        "private": {
+          "my_credentials": {
+            "api_key": "2d93d1d3-3a10-4932-96ad-a459c18d9303:psFBPaUFCg8ZN5JzY08Goe0Q9a1tvTiHT5DprNF0g1Y6NaXH3RQOWf4I12bFv1y7"
+          }
+        }
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1545239144456"
+      },
+      "conditions": "#Order_Event_Details",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1545194787266",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1544477873535",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Opening",
+      "output": {
+        "text": {
+          "values": [
+            "Hello and welcome to the Acme Mart Customer Care Center.  How can I help you?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Opening"
+    }
+  ],
+  "workspace_id": "f4938d9a-0fd4-465d-885b-07ddee866dc4",
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "status": "Available"
+}

@@ -1,0 +1,72 @@
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 3000,
+  "remoting": {
+    "context": false,
+    "rest": {
+      "handleErrors": false,
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100kb"
+    },
+    "cors": false
+  },
+  "legacyExplorer": false,
+  "logoutSessionsOnSensitiveChanges": true,
+  "watsonServices": {
+    "visualRecognition": {}
+  },
+  "cloudObjectStorage": {},
+  "scheduler": {
+    "deleteUploadImages": {
+      "deleteAtMinPastHour": [
+        1,
+        11,
+        21,
+        31,
+        41,
+        51
+      ],
+      "deleteFilesOlderThanMin": 5
+    },
+    "deleteIdentityImages": {
+      "deleteAtMinPastHour": [
+        3,
+        13,
+        23,
+        33,
+        43,
+        53
+      ],
+      "deleteFilesOlderThanMin": 5
+    },
+    "updateOrderProgressEvents": {
+      "rule": "*/2 * * * *"
+    }
+  },
+  "version": {
+    "client": {
+      "major": 1,
+      "minor": 5,
+      "build": 1
+    },
+    "server": {
+      "major": 2,
+      "minor": 0,
+      "build": 1
+    }
+  },
+  "eventStreams": {
+  },
+  "storage": {
+    "local": "./server/storage/identify"
+  }
+}

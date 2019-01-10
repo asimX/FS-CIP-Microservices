@@ -1,0 +1,13 @@
+{
+	"name" : "AcmeMartUtilityAPI",
+	"services" : [],
+	"type" : "web",
+	"version" : "1.0",
+	"defaultMemory": 1024,
+	"description" : "API that supports the Acme Mart Demo App",
+	"smallIcon" : "powered-by-LB-xs.png",
+	"icon" : "powered-by-LB-xs.png",
+	"largeIcon" : "powered-by-LB-xs.png",
+	"featuredIcon" : "powered-by-LB-xs.png",
+	"runtime": { "name": "SDK for Node.js™" }
+}

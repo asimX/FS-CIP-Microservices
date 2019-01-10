@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "ConfigSlot1",
+    "_rev": "5-15dc75c5ca65b92907c1f02f6a8be7e4",
+    "nickname": "Public Cloud (London)",
+    "clientID": "af0a85e4-92fe-4b87-8545-f536fbf811a3",
+    "clientSecret": "M6hQ5nR0kT2jO6mU5gA3dS3yN7uT8vY7eG3jH4xN1pS7vM7hN3",
+    "baseURL": "https://api.eu-gb.apiconnect.appdomain.cloud/dennisashby-demo/acmemartud",
+    "loopback__model__name": "Config"
+  },
+  {
+    "_id": "ConfigSlot2",
+    "_rev": "3-2d03ecd90879d4c5c8d6e53be96d94b8",
+    "nickname": "Config #2 Description (DB)",
+    "clientID": "Config #2 Client ID (DB)",
+    "clientSecret": "Config #2 Client Secret (DB)",
+    "baseURL": "https://CONFIG2-BASE-URL-DB",
+    "loopback__model__name": "Config"
+  },
+  {
+    "_id": "ConfigSlot3",
+    "_rev": "3-e4f3a4890a05cfffc17af0e0bdff7001",
+    "nickname": "Config #3 Description (DB)",
+    "clientID": "Config #3 Client ID (DB)",
+    "clientSecret": "Config #3 Client Secret (DB)",
+    "baseURL": "https://CONFIG3-BASE-URL-DB",
+    "loopback__model__name": "Config"
+  }
+]
+

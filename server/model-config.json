@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Utility": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "Coach": {
+    "dataSource": "cloudantDB",
+    "public": false
+  },
+  "Config": {
+    "dataSource": "cloudantDB",
+    "public": false
+  },
+  "Event": {
+    "dataSource": "cloudantDB",
+    "public": true
+  },
+  "Sneaker": {
+    "dataSource": false,
+    "public": true
+  }
+}

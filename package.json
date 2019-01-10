@@ -1,0 +1,53 @@
+{
+  "name": "AcmeMartUtilityAPI",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": "8.*"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "dependencies": {
+    "appmetrics-dash": "^3.3.2",
+    "array-sort": "^0.1.2",
+    "array-unique": "^0.3.2",
+    "async": "^2.5.0",
+    "basic-auth": "^2.0.0",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "encodeurl": "^1.0.2",
+    "helmet": "^1.3.0",
+    "ibm-cos-sdk": "^1.3.0",
+    "json-query": "^2.2.2",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^4.2.0",
+    "loopback-component-storage": "^1.5.0",
+    "loopback-connector-cloudant": "^1.2.4",
+    "loopback-connector-rest": "^2.1.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "message-hub-rest": "2.0.0",
+    "node-rdkafka": "2.3.3",
+    "node-schedule": "^1.2.3",
+    "request": "^2.88.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^2.0.0",
+    "uuid": "^3.1.0",
+    "watson-developer-cloud": "^3.11.1",
+    "xml2json": "^0.11.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "nsp": "^2.1.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "MIT",
+  "description": "AcmeMartUtilityAPI"
+}

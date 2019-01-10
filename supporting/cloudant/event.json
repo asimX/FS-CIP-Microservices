@@ -1,0 +1,87 @@
+{
+  "_id": "913736ed1f31e6aedb3da48e355d930c",
+  "_rev": "5-e33ca0951c453999fd9430c8334a8458",
+  "purchaseOrder": "3413425",
+  "shipTo": {
+    "name": "Test Account",
+    "street": "1060 West Addison",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60680"
+  },
+  "billTo": {
+    "name": "Test Account",
+    "street": "1060 West Addison",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60680"
+  },
+  "item": {
+    "partNum": "AJ1-06",
+    "productName": "Blue, White & Gold",
+    "quantity": "1",
+    "price": "106.99",
+    "shipDate": "2018-12-16T18:08:21.374Z"
+  },
+  "status_code": 500,
+  "last_update": "2018-12-16T18:16:00.779Z",
+  "history": [
+    {
+      "type": "initial",
+      "timestamp": "2018-12-16T18:08:22.183Z",
+      "topic": "kafka-nodejs-console-sample-topic",
+      "partition": 0,
+      "offset": 331,
+      "key": null
+    },
+    {
+      "type": "update",
+      "timestamp": "2018-12-16T18:10:02.641Z",
+      "topic": "acmemart_update_order",
+      "partition": 0,
+      "offset": 33,
+      "key": [
+        75,
+        101,
+        121
+      ]
+    },
+    {
+      "type": "update",
+      "timestamp": "2018-12-16T18:12:00.694Z",
+      "topic": "acmemart_update_order",
+      "partition": 0,
+      "offset": 34,
+      "key": [
+        75,
+        101,
+        121
+      ]
+    },
+    {
+      "type": "update",
+      "timestamp": "2018-12-16T18:14:00.735Z",
+      "topic": "acmemart_update_order",
+      "partition": 0,
+      "offset": 35,
+      "key": [
+        75,
+        101,
+        121
+      ]
+    },
+    {
+      "type": "update",
+      "timestamp": "2018-12-16T18:16:00.779Z",
+      "topic": "acmemart_update_order",
+      "partition": 0,
+      "offset": 36,
+      "key": [
+        75,
+        101,
+        121
+      ]
+    }
+  ],
+  "loopback__model__name": "Event"
+}

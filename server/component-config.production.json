@@ -1,0 +1,10 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "uiDirs": "server/explorer",
+    "apiInfo": {
+      "title": "{'welcome': 'Acme Mart Utility API', 'env': 'production'}",
+      "description": "APIs to support the Acme Mart Demo App"
+    }
+  }
+}
