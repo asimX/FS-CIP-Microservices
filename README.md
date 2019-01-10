@@ -36,11 +36,11 @@ npm install
 * docker run --rm -it acmemartutilityapi
 
 ## Order Fulfilment
-1 Order is received, either in person, on the phone, via email, etc.
-2 Order is sent to the warehouse. A paper order might be taken to the warehouse as part of a batch, or it is sent directly from an invoicing or sales order management application.
-3 Order is picked: a worker goes into the warehouse, finds the items in the order, and picks them off the shelf.
-4 Order is packed to prepare for shipping.
-5 Order is shipped.
+* 1 - Order is received, either in person, on the phone, via email, etc.
+* 2 - Order is sent to the warehouse. A paper order might be taken to the warehouse as part of a batch, or it is sent directly from an invoicing or sales order management application.
+* 3 - Order is picked: a worker goes into the warehouse, finds the items in the order, and picks them off the shelf.
+* 4 - Order is packed to prepare for shipping.
+* 5 - Order is shipped.
 
 
 
